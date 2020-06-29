@@ -1,0 +1,6 @@
+<% if (typeof errors != 'undefined') { %> <!-- this angular bracket and percentage is similar to angular bracket of jsx -->
+    <% errors.forEach(function(error) { %>
+ <!-- if we want output with ejs, we have to put '=' sign with % -->
+        <%= error.msg %>
+    <% }); %>
+<% } %>
